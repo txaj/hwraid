@@ -185,7 +185,7 @@ while controllerid < controllernumber:
 	output = getOutput(cmd)
 	arraydisk = returnDiskInfo(output)
 	for array in arraydisk:
-		if not array[2] == 'Online' and not array[2] == 'Online, Spun Up' and not array[2] == 'Hotspare, Spun down' and not array[2] == 'Hotspare, Spun down':
+		if not array[2] == 'Online' and not array[2] == 'Online, Spun Up' and not array[2] == 'Online, Spun Down' and not array[2] == 'Hotspare, Spun down' and not array[2] == 'Hotspare, Spun down':
 			bad=True
 			nagiosbaddisk=nagiosbaddisk+1
 		else:
